@@ -1,5 +1,3 @@
-# Introduction
-This is actually my second CTF, but my first write up since I mostly did OSINT challenges during my previous CTF that did not require much documentation (or I did not really document enough).
-
-### The CTF Itself
-DSO-NUS CTF 2021 is a cybersecurity Capture-The-Flag challenge open to all students from local tertiary institutions, jointly organised by DSO National Laboratories and NUS Computing.
+A repository documenting my adventures through CTF.
+<br><br><br>
+_Note to self: Should have started way earlier than Y2 in university. But better late than never i guess._
