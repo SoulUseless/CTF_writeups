@@ -53,7 +53,7 @@ Boy, was I happy to see the first 2 characters of the flag: `D` and `S`.
 
 Then I took this function and included it in my full script `chosen plaintext.py` that read `data.txt`, and spits out flag for me.
 
-<img src='images/key.jpg' />
+<img src='images/key.png' />
 
 And this marks the end of my first (actual?) key that I had to code something out specifically for.
 
