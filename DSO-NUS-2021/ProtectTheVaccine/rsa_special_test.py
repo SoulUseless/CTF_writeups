@@ -1,0 +1,38 @@
+import math
+import decimal
+decimal.getcontext().prec = 2048
+
+def solve_quadratic(a, b, c):
+    d = (b**2) - (4*a*c)
+    
+    if d < 0:
+        return (None, None)
+    
+    sol1 = (-b-pow(d, decimal.Decimal(0.5)))/(2*a)
+    sol2 = (-b+pow(d, decimal.Decimal(0.5)))/(2*a)
+    return (sol1, sol2)
+
+
+N = decimal.Decimal(25443213484803330676546636060506767271319211956273880351374351825462561580132551177398365004567302649029372469108528581383182366032879612606427513826234802141122998206193459531773833796480172789254233470084592231117946043667803816674367149523326731127008733355361824250743661733271951270041603994991855260193100644339351409446036601574046698036751560570936645802773832960804417075002671744354815841155246667831512956948961180313537576080810878904128457697494633264997808381810844117016959712493847383233300377347818990874284472761519902676254694772586325941589525740707826852095908188649384624121217162949627607660163)
+r_p = decimal.Decimal(3017)
+r_q = decimal.Decimal(2539)
+i = decimal.Decimal(math.ceil(math.sqrt(r_p * r_q)))
+
+while True:
+    delta = pow(round(pow(N, decimal.Decimal(0.5))) - i, 2)
+    z = (N - r_p * r_q) % delta
+
+    x1, x2 = solve_quadratic(1, -z, delta * r_p * r_q)
+    temp_p = N / ((x1/r_p) + r_q)
+    temp_q = N / ((x2/r_q) + r_p)
+    if temp_p % 1 == 0 and temp_q % 1 == 0:
+        p = temp_p
+        q = temp_q
+        break
+    print(i)
+    i += 1
+
+print("p, q found")
+print(p)
+print("")
+print(q)
