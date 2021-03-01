@@ -1,5 +1,6 @@
-# PoorMen
+# PoorMen (38 Solves; 149 Points)
 Category: Web/Crypto
+> I followed the description in the section 5.3 to implement the cryptosystem. However, my friend who is a crypto expert told me that there's something wrong about this, can you figure it out?
 
 For this challenge, we were given a single task: to decode the ciphertext given in `data.txt`.
 Based on some hindsight information, this challenge was created by the NUS-side, which explains why there is a whole academic paper for me to digest before starting.  
