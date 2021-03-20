@@ -28,4 +28,4 @@ Although, there is not much room for automation (at least not with my current sk
 
 Afternote:  
 Turned out that the payload was a much simpler `admin'--`
-###GO WITH THE SIMPLER PAYLAOD NEXT TIME
+###GO WITH THE SIMPLER PAYLOAD NEXT TIME
