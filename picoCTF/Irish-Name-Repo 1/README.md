@@ -12,7 +12,7 @@ I did a standard litmus test for SQLi of a single quotation mark. And I got an E
 Now applying what I have learnt with regards to SQLi, is to roughly guess what is the backend SQL statement.
 
 My first guess would be:
-`'<login> WHERE USERNAME=<username> AND PASSWORD=<password>'`
+`'SELECT * FROM users WHERE USERNAME=<username> AND PASSWORD=<password>'`
 
 Given the guess, it would be clear that my payload would be at the username field:
 `admin' OR 1=1;--`. The `OR 1=1` serves to bypass whatever authentication checks present in the backend.
@@ -25,3 +25,7 @@ Although, there is not much room for automation (at least not with my current sk
 ##Lessons
 * Check for SQLi vulnerability whenever there is a text field
 * This was but a baby SQL flag, there's much more sophisticated SQL injections that I've seen before such as prepared statements and obfuscation.
+
+Afternote:  
+Turned out that the payload was a much simpler `admin'--`
+###GO WITH THE SIMPLER PAYLAOD NEXT TIME
