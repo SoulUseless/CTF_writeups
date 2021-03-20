@@ -18,7 +18,7 @@ Given the guess, it would be clear that my payload would be at the username fiel
 `admin' OR 1=1;--`. The `OR 1=1` serves to bypass whatever authentication checks present in the backend.
 <img src='images/payload.png' />
 
-Surprisingly, that actually worked.
+Surprisingly, that actually worked.  
 <img src='images/flag.png' />
 
 Although, there is not much room for automation (at least not with my current skillset). I have heard of some people who created their own browser extension to automatically perform SQL injection.
